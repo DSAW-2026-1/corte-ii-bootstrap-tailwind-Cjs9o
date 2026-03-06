@@ -48,6 +48,12 @@ As mentioned above, there are many ways to host your project for free. Our recom
 - [Vercel](https://vercel.com/)
 - [Netlify](https://www.netlify.com/)
 
+## Activity link
+### Student: Camilo Andres Moncada Vasquez
+### Code: 343553
+### Link:
+https://dsaw-2026-1.github.io/corte-ii-bootstrap-tailwind-Cjs9o/
+
 ## Create a custom `README.md`
 
 We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
