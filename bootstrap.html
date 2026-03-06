@@ -9,24 +9,77 @@
   <title>Bootstrap| Stats preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    background-color: hsl(233, 47%, 7%); font-family: 'Inter', sans-serif;
+    color: white; display: flex; align-items: center; justify-content: center; min-height: 100vh;
+  }
+  .card-custom {
+    background-color: hsl(244, 38%, 16%); border-radius: 8px;
+    overflow: hidden; max-width: 1110px;
+  }
+  .accent-color {
+    color: hsl(277, 64%, 61%);
+  }
+  .img-overlay { background-color: hsl(277, 64%, 61%);
+    position: relative;
+  }
+  .img-overlay img { mix-blend-mode: multiply; opacity: 0.75;
+    width: 100%; height: 100%; object-fit: cover;
+  }
+  /* Mantén tu estilo de attribution aquí */
+  .attribution { font-size: 11px; text-align: center;
+  color: white; margin-top: 20px;
+  }
+</style>
 </head>
 <body>
+  
+  <div class="position-relative">
+  <div class="position-absolute top-0 start-0 translate-middle"></div>
+  <div class="position-absolute top-0 start-50 translate-middle"></div>
+  <div class="position-absolute top-0 start-100 translate-middle"></div>
+  <div class="position-absolute top-50 start-0 translate-middle"></div>
+  <div class="position-absolute top-50 start-50 translate-middle"></div>
+  <div class="position-absolute top-50 start-100 translate-middle"></div>
+  <div class="position-absolute top-100 start-0 translate-middle"></div>
+  <div class="position-absolute top-100 start-50 translate-middle"></div>
+  <div class="position-absolute top-100 start-100 translate-middle"></div>
 
-  Get insights that help your business grow.
-
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
-
-  <div class="attribution">
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main class="container">
+    <div class="row card-custom flex-column-reverse flex-lg-row">
+      <div class="col-lg-6 p-5 text-center text-lg-start">
+        <h1 class="fw-bold mb-4">Get <span class="accent-color">insights</span> that help your business grow.</h1>
+        <p class="mb-5" style="color: hsla(0, 0%, 100%, 0.75);">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+        <div class="row">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <h3 class="fw-bold">10k+</h3>
+            <p class="text-uppercase small" style="color: hsla(0, 0%, 100%, 0.6);">companies</p>
+          </div>
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <h3 class="fw-bold">314</h3>
+            <p class="text-uppercase small" style="color: hsla(0, 0%, 100%, 0.6);">templates</p>
+          </div>
+          <div class="col-lg-4">
+            <h3 class="fw-bold">12m+</h3>
+            <p class="text-uppercase small" style="color: hsla(0, 0%, 100%, 0.6);">queries</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 p-0 img-overlay">
+        <picture>
+          <source srcset="./images/image-header-desktop.jpg" media="(min-width: 992px)">
+          <img src="./images/image-header-mobile.jpg" alt="Office work">
+        </picture>
+      </div>
+    </div>
+    <div class="attribution">
+      Coded by <a href="#">Camilo Andres Moncada</a>.
+    </div>
+  </main>
 </body>
 </html>
